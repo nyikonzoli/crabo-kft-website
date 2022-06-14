@@ -14,8 +14,7 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/admin/login', function () {
-    return view('admin.login');
-});
-
+Route::get('/admin/login', [AuthController::class, 'show']);
 Route::post('/admin/login', [AuthController::class, 'login'])->name('auth.login');
+
+Route::get()
