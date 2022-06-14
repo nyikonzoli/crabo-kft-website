@@ -12,7 +12,20 @@
     <div class="wrapper">
         <div class="login-container">
             <h1>Bejelentkezés</h1>
-            {{  }}
+            {{ Form::open(["route" => "auth.login", "method" => "post"]) }}
+                <div class="mb-3">
+                    {{ Form::label('username', 'Felhasználónév') }}
+                    {{ Form::text('username', $value = null, $attributes = ["class" => "login-textbox"]) }}
+                </div>
+                <div class="mb-3">
+                <label for="passwordd">Jelszó</label><br>
+                    {{ Form::password('passwordd', $attributes = ["class" => "login-textbox"]) }}
+                </div>
+                <div class="mb-3 text-end">
+                    {{ Form::submit('Bejelentkezés', ["class" => "btn btn-success"]) }} 
+                    <a href="">Elfelejtette a jelszavát?</a>
+                </div>
+            {{ Form::close() }}
         </div>
     </div>
 </body>
