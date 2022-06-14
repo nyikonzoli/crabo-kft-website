@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/admin/login', [AuthController::class, 'show']);
 Route::post('/admin/login', [AuthController::class, 'login'])->name('auth.login');
+Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middleware('auth.basic')->name('admin.dashboard.index');

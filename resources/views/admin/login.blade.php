@@ -13,6 +13,7 @@
         <div class="login-container">
             <h1>Bejelentkezés</h1>
             {{ Form::open(["route" => "auth.login", "method" => "post"]) }}
+                {{ csrf_field() }}    
                 <div class="mb-3">
                     {{ Form::label('username', 'Felhasználónév') }}
                     {{ Form::text('username', $value = null, $attributes = ["class" => "login-textbox"]) }}

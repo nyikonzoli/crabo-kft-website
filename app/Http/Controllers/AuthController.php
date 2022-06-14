@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -15,8 +16,7 @@ class AuthController extends Controller
         $data = $request->validated();
         $data["password"] = $data["passwordd"];
         if (Auth::attempt($data)){
-            $request->session()->regenerate();
-            return redirect()->intended('admin.dashboard');
+            return redirect()->route('admin.dashboard.index');
         }
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
