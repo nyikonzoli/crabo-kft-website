@@ -17,7 +17,6 @@ class CreateDiscountsTable extends Migration
             $table->id();
             $table->foreignId('package_id');
             $table->integer('new_price');
-            $table->date('expire_date');
             $table->boolean('active');
         });
     }

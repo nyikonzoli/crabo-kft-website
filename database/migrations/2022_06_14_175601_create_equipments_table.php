@@ -16,7 +16,7 @@ class CreateEquipmentsTable extends Migration
         Schema::create('equipments', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('vehcile_id');
+            $table->foreignId('vehicle_id');
         });
     }
 
