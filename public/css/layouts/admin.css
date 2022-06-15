@@ -1,0 +1,55 @@
+body{
+    background-color: #f0f0f0;;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu{
+    height: 100vh;
+    width: 256px;
+    background-color: #212529;
+}
+
+.main{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.brand{
+    font-size: 160% !important;
+    font-weight: bold;
+    color: white;
+}
+
+.brand:hover{
+    color: white;
+}
+
+.brand-li{
+    margin-bottom: 2rem !important;
+}
+
+.menu > ul{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0px;
+    list-style: none;
+    color: #0d6efd;
+}
+
+.menu > ul > li{
+    margin-bottom: 1rem;
+    font-size: 120%;
+}
+
+.menu i{
+    margin-right: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
