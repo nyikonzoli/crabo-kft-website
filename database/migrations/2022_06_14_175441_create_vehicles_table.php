@@ -27,6 +27,8 @@ class CreateVehiclesTable extends Migration
             $table->string('outer_color');
             $table->string('inner_color');
             $table->string('motor');
+            $table->string('description');
+            $table->foreignId('vehicle_type_id');
         });
     }
 

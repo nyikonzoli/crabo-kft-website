@@ -22,6 +22,7 @@ class Vehicle extends Model
         "outer_color",
         "inner_color",
         "motor",
+        "description"
     ];
 
     public function truck(){
@@ -46,5 +47,9 @@ class Vehicle extends Model
 
     public function bodywork(){
         return $this->belongsTo(BodyworkType::class, 'bodywork_type_id');
+    }
+
+    public function tpye(){
+        return $this->belongsTo(VehicleType::class, 'vehicle_type_id');
     }
 }
