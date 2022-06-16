@@ -9,7 +9,6 @@
 
 .top-text{
     margin-top: 4rem;
-    margin-bottom: 4rem;
     height: fit-content;
     width: 100%;
     text-align: left;
@@ -59,6 +58,10 @@
     background-image: linear-gradient(to right bottom, #c03131, #c14825, #c05d1b, #bb7012, #b58212);
 }
 
+.box-green{
+    background-image: linear-gradient(to right bottom, #19f46e, #17c153, #11913b, #096324, #023910);
+}
+
 .clickable{
     transition: all .2s ease-in-out;
 }
@@ -75,4 +78,12 @@
 
 .box p{
     font-size: 140%;
+}
+
+.article-title{
+    margin-bottom: 2rem;
+    font-size: 300%;
+    width: 100%;
+    text-align: left;
+    margin-top: 3rem;
 }

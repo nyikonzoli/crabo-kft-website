@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="login-container">
             <h1>Bejelentkezés</h1>
-            {{ Form::open(["route" => "auth.login", "method" => "post"]) }}
+            {{ Form::open(["route" => "auth.login", "method" => "post", "id" => "login-form"]) }}
                 {{ csrf_field() }}    
                 <div class="mb-3">
                     {{ Form::label('username', 'Felhasználónév') }}
@@ -23,11 +23,18 @@
                     {{ Form::password('passwordd', $attributes = ["class" => "login-textbox"]) }}
                 </div>
                 <div class="mb-3 text-end">
-                    {{ Form::submit('Bejelentkezés', ["class" => "btn btn-success"]) }} 
+                    <button class="btn btn-success" onclick="sbmt();">Bejelentkezés</button>
                     <a href="">Elfelejtette a jelszavát?</a>
                 </div>
             {{ Form::close() }}
         </div>
     </div>
+    <script>
+        function sbmt(){
+            axios.get('/sanctum/csrf-cookie').then(response => {
+                document.getElementById('login-form').submit();
+            });
+        }
+    </script>
 </body>
 </html>
