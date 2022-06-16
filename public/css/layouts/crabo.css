@@ -1,0 +1,8 @@
+.footer-div{
+    width: 100%;
+    background-color: black;
+}
+
+.footer-div a:hover{
+    color: #8e98a0 !important;
+}
