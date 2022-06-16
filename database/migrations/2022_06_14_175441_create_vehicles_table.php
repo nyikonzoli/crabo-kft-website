@@ -15,10 +15,18 @@ class CreateVehiclesTable extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-            $table->integer('motor_cm');
-            $table->integer('passengers');
-            $table->boolean('climate');
-            $table->integer('deposit');
+            $table->string('plate');
+            $table->integer('year');
+            $table->foreignId('fuel_type_id');
+            $table->integer('doors');
+            $table->integer('seats');
+            $table->string('brand');
+            $table->string('model');
+            $table->foreignId('bodywork_type_id');
+            $table->foreignId('gearbox_type_id');
+            $table->string('outer_color');
+            $table->string('inner_color');
+            $table->string('motor');
         });
     }
 

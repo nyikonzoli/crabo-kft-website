@@ -10,10 +10,18 @@ class Vehicle extends Model
     protected $table = 'vehicles';
     public $timestamps = false;
     protected $fillable = [
-        "motor_cm",
-        "passengers",
-        "climate",
-        "deposit",
+        "palte",
+        "year",
+        "fuel_type_id",
+        "doors",
+        "seats",
+        "brand",
+        "model",
+        "bodywork_type_id",
+        "gearbox_type_id",
+        "outer_color",
+        "inner_color",
+        "motor",
     ];
 
     public function truck(){
@@ -25,10 +33,18 @@ class Vehicle extends Model
     }
 
     public function equipments(){
-        return $this->hasMany(Equipment::class, 'vehicle_id');
+        return $this->belongsToMany(Equipment::class, 'equipment_vehicle');
     }
 
-    public function passengerCar(){
-        return $this->hasOne(PassengerCar::class, 'vehicle_id');
+    public function fuel(){
+        return $this->belongsTo(FuelType::class, 'fuel_type_id');
+    }
+
+    public function gearbox(){
+        return $this->belongsTo(GearboxType::class, 'gearbox_type_id');
+    }
+
+    public function bodywork(){
+        return $this->belongsTo(BodyworkType::class, 'bodywork_type_id');
     }
 }

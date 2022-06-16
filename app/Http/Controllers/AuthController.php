@@ -16,7 +16,7 @@ class AuthController extends Controller
         $data = $request->validated();
         $data["password"] = $data["passwordd"];
         if (Auth::attempt($data)){
-            return redirect()->route('admin.dashboard.index');
+            return redirect()->route('admin.index');
         }
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
