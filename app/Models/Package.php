@@ -13,6 +13,7 @@ class Package extends Model
         "duration",
         "price",
         "vehicle_id",
+        "partner_price",
     ];
 
     public function discount(){

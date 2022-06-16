@@ -12,6 +12,7 @@ class Discount extends Model
     protected $fillable = [
         "package_id",
         "new_price",
+        "new_partner_price",
         "active",
     ];
 

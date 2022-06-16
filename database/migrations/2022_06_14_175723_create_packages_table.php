@@ -17,6 +17,7 @@ class CreatePackagesTable extends Migration
             $table->id();
             $table->string('duration');
             $table->integer('price');
+            $table->integer('partner_price');
             $table->foreignId('vehicle_id');
         });
     }

@@ -17,6 +17,7 @@ class CreateDiscountsTable extends Migration
             $table->id();
             $table->foreignId('package_id');
             $table->integer('new_price');
+            $table->integer('new_partner_price');
             $table->boolean('active');
         });
     }
