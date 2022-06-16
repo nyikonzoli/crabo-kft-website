@@ -19,6 +19,7 @@
                 <li><a href=""><i class="fa-solid fa-car"></i>Személyautók</a></li>
                 <li><a href=""><i class="fa-solid fa-truck"></i>Teherautók</a></li>
                 <li><a href=""><i class="fa-solid fa-bolt"></i>Elektromos autók</a></li>
+                <li><a href=""><i class="fa-solid fa-circle-plus"></i>Kiegészítők</a></li>
                 <li><a href=""><i class="fa-solid fa-gears"></i>Beállítások</a></li>
             </ul>
         </div>
