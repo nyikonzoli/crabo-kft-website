@@ -15,10 +15,10 @@ class FuelSeeder extends Seeder
     public function run()
     {   
         $fuels = ["Benzin", 'Dízel', 'Elektromos'];
-        for ($i=0; $i < count($fuels); $i++) { 
+        for ($i=1; $i < count($fuels) + 1; $i++) { 
             DB::table('fuel_types')->insert([
                 'id' => $i,
-                'type' => $fuels[$i],
+                'type' => $fuels[$i - 1],
             ]);
         }
 

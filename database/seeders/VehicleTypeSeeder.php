@@ -15,10 +15,10 @@ class VehicleTypeSeeder extends Seeder
     public function run()
     {
         $type = ["Személyautó", "Furgon", "Teherautó", "Elektromos autó"];
-        for ($i=0; $i < count($type); $i++) { 
+        for ($i=1; $i < count($type) + 1; $i++) { 
             DB::table('vehicle_types')->insert([
                 'id' => $i,
-                'type' => $type[$i],
+                'type' => $type[$i - 1],
             ]);
         }
     }

@@ -31,9 +31,8 @@
     </div>
     <script>
         function sbmt(){
-            axios.get('/sanctum/csrf-cookie').then(response => {
-                document.getElementById('login-form').submit();
-            });
+            document.getElementById('login-form').submit();
+
         }
     </script>
 </body>

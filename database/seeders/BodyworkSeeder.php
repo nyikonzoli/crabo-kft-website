@@ -15,10 +15,10 @@ class BodyworkSeeder extends Seeder
     public function run()
     {
         $bodyworks = ["Szedán / ferdehátú", 'Kombi', 'Csukott áruszállító', 'Nyitott (ponyvás) teherautó', "Személyszállító kisbusz"];
-        for ($i=0; $i < count($bodyworks); $i++) { 
+        for ($i=1; $i < count($bodyworks) + 1; $i++) { 
             DB::table('bodywork_types')->insert([
                 'id' => $i,
-                'type' => $bodyworks[$i],
+                'type' => $bodyworks[$i - 1],
             ]);
         }
     }

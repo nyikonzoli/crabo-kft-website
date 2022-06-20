@@ -15,10 +15,10 @@ class GearboxSeeder extends Seeder
     public function run()
     {
         $gearboxes = ["Manuális", 'Automata'];
-        for ($i=0; $i < count($gearboxes); $i++) { 
+        for ($i=1; $i < count($gearboxes) + 1; $i++) { 
             DB::table('gearbox_types')->insert([
                 'id' => $i,
-                'type' => $gearboxes[$i],
+                'type' => $gearboxes[$i - 1],
             ]);
         }
     }
