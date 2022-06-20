@@ -10,8 +10,7 @@ class Equipment extends Model
     protected $table = 'equipments';
     public $timestamps = false;
     protected $fillable = [
-        "name",
-        "vehicle_id",
+        "type",
     ];
 
     public function vehicle(){

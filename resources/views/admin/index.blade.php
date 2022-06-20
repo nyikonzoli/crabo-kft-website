@@ -36,22 +36,22 @@
         </div>
         <h1 class="article-title">Típusok</h1>
         <div class="boxes">
-            <div class="box box-shape box-blue">
-                <h1>{{ $data["vehicleTypes"] }}</h1>
-                <p>jármű típus</p>
-            </div>
-            <div class="box box-shape box-pink clickable">
+            <a href="{{ route('equipment.index') }}" class="box box-shape box-blue clickable">
+                <h1>{{ $data["equipments"] }}</h1>
+                <p>féle kiegészítő</p>
+            </a>
+            <a href="{{ route('fuel.index') }}" class="box box-shape box-pink clickable">
                 <h1>{{ $data["fuels"] }}</h1>
-                <p>üzemanyag</p>
-            </div>
-            <div class="box box-shape box-red clickable">
+                <p>fajta üzemanyag</p>
+            </a>
+            <a href="{{ route('bodywork.index') }}" class="box box-shape box-red clickable">
                 <h1>{{ $data["bodyworks"] }}</h1>
                 <p>karosszéria</p>
-            </div>
-            <div class="box box-shape box-black clickable">
+            </a>
+            <a href="{{ route('gearbox.index') }}" class="box box-shape box-black clickable">
                 <h1>{{ $data["gearboxes"] }}</h1>
                 <p>sebességváltó</p>
-            </div>
+            </a>
 
         </div>
     </div>

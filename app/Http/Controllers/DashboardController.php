@@ -8,6 +8,7 @@ use App\Models\BodyworkType;
 use App\Models\FuelType;
 use App\Models\GearboxType;
 use App\Models\VehicleType;
+use App\Models\Equipment;
 
 class DashboardController extends Controller
 {
@@ -21,7 +22,7 @@ class DashboardController extends Controller
             "bodyworks" => count(BodyworkType::all()),
             "fuels" => count(FuelType::all()),
             "gearboxes" => count(GearboxType::all()),
-            "vehicleTypes" => count(VehicleType::all()),
+            "equipments" => count(Equipment::all()),
         ];
         return view('admin.index')->with("data", $data);
     }

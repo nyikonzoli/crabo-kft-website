@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             GearboxSeeder::class,
             VehicleSeeder::class,
             VehicleTypeSeeder::class,
+            EquipmentSeeder::class,
         ]);
     }
 }

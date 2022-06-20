@@ -22,10 +22,10 @@
                 <li><a href=""><i class="fa-solid fa-van-shuttle"></i>Furgonok</a></li>
                 <li><a href=""><i class="fa-solid fa-truck"></i>Teherautók</a></li>
                 <li><a href=""><i class="fa-solid fa-bolt"></i>Elektromos autók</a></li>
-                <li><a href=""><i class="fa-solid fa-circle-plus"></i>Kiegészítők</a></li>
-                <li><a href=""><i class="fa-solid fa-gas-pump"></i>Üzemanyagok</a></li>
-                <li><a href=""><i class="fa-solid fa-car-rear"></i>Karosszériák</a></li>
+                <li><a href="{{ route('equipment.index') }}"><i class="fa-solid fa-circle-plus"></i>Kiegészítők</a></li>
+                <li><a href="{{ route('bodywork.index') }}"><i class="fa-solid fa-car-rear"></i>Karosszériák</a></li>
                 <li><a href="{{ route('gearbox.index') }}"><i class="fa-solid fa-gears"></i>Sebességváltók</a></li>
+                <li><a href="{{ route('fuel.index') }}"><i class="fa-solid fa-gas-pump"></i>Üzemanyagok</a></li>
             </ul>
         </div>
         <div class="main">

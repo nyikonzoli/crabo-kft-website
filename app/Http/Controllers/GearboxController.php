@@ -9,7 +9,7 @@ use App\Http\Requests\TypeStoreRequest;
 class GearboxController extends Controller
 {
     public function index(){
-        return view('crabo.gearbox')->with('gearboxes', GearboxType::all());
+        return view('admin.gearbox')->with('gearboxes', GearboxType::all());
     }
 
     public function store(TypeStoreRequest $request){
