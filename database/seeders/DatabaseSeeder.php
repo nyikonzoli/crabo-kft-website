@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             VehicleSeeder::class,
             VehicleTypeSeeder::class,
             EquipmentSeeder::class,
+            CargoSpaceSeeder::class,
         ]);
     }
 }

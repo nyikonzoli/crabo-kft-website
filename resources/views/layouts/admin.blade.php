@@ -18,10 +18,7 @@
             <ul>
                 <li class="brand-li"><a href="{{ route('admin.index') }}" class="brand">Crabo Kft.</a></li>
                 <li><a href="{{ route('admin.index') }}"><i class="fa-solid fa-house"></i>Főoldal</a></li>
-                <li><a href=""><i class="fa-solid fa-car"></i>Személyautók</a></li>
-                <li><a href=""><i class="fa-solid fa-van-shuttle"></i>Furgonok</a></li>
-                <li><a href=""><i class="fa-solid fa-truck"></i>Teherautók</a></li>
-                <li><a href=""><i class="fa-solid fa-bolt"></i>Elektromos autók</a></li>
+                <li><a href="{{ route('vehicle.index') }}"><i class="fa-solid fa-car"></i>Járművek</a></li>
                 <li><a href="{{ route('equipment.index') }}"><i class="fa-solid fa-circle-plus"></i>Kiegészítők</a></li>
                 <li><a href="{{ route('bodywork.index') }}"><i class="fa-solid fa-car-rear"></i>Karosszériák</a></li>
                 <li><a href="{{ route('gearbox.index') }}"><i class="fa-solid fa-gears"></i>Sebességváltók</a></li>

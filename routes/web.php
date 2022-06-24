@@ -8,6 +8,8 @@ use App\Http\Controllers\GearboxController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\BodyworkController;
 use App\Http\Controllers\FuelTypeController;
+use App\Http\Controllers\PassengerCarController;
+use App\Http\Controllers\VehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,6 +56,12 @@ Route::get('/admin/uzemanyagok', [FuelTypeController::class, 'index'])->middlewa
 Route::post('/admin/uzemanyagok', [FuelTypeController::class, 'store'])->middleware('auth.basic')->name('fuel.store');
 Route::delete('admin/uzemanyagok/{id}', [FuelTypeController::class, 'destroy'])->middleware('auth.basic')->name('fuel.destroy');
 Route::put('admin/uzemanyagok/{id}', [FuelTypeController::class, 'update'])->middleware('auth.basic')->name('fuel.update');
+
+//Vehicle
+Route::get('/admin/jarmuvek', [VehicleController::class, 'index'])->middleware('auth.basic')->name('vehicle.index');
+Route::post('/admin/jarmuvek', [VehicleController::class, 'store'])->middleware('auth.basic')->name('vehicle.store');
+Route::delete('admin/jarmuvek/{id}', [VehicleController::class, 'destroy'])->middleware('auth.basic')->name('vehicle.destroy');
+Route::put('admin/jarmuvek/{id}', [VehicleController::class, 'update'])->middleware('auth.basic')->name('vehicle.update');
 
 ///////
 //Crabo

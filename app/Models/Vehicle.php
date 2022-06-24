@@ -25,10 +25,6 @@ class Vehicle extends Model
         "description"
     ];
 
-    public function truck(){
-        return $this->hasOne(Truck::class, 'vehicle_id');
-    }
-
     public function packages(){
         return $this->hasMany(Package::class, 'vehicle_id');
     }
@@ -51,5 +47,9 @@ class Vehicle extends Model
 
     public function tpye(){
         return $this->belongsTo(VehicleType::class, 'vehicle_type_id');
+    }
+
+    public function cargoSpace(){
+        return $this->hasOne(CargoSpace::class, 'vehicle_id');
     }
 }

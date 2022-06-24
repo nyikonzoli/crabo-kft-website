@@ -6,3 +6,30 @@
 .footer-div a:hover{
     color: #8e98a0 !important;
 }
+
+iframe{
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+.navbar{
+    background-color: #fcde67;
+}
+
+.navbar a{
+    color: #030e12;
+}
+
+.nav-link:hover{
+    color: #3a3a3a
+}
+
+.ajanlat{
+    color: #030e12;
+    border-color: #030e12;
+}
+
+.ajanlat:hover{
+    background-color: #030e12;
+    color: #fcde67;
+}

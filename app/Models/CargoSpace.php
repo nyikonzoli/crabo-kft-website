@@ -13,10 +13,10 @@ class CargoSpace extends Model
         "height",
         "width",
         "length",
-        "truck_id",
+        "vehicle_id",
     ];
 
-    public function truck(){
-        return $this->belongsTo(Truck::class, 'truck_id');
+    public function vehicle(){
+        return $this->belongsTo(Vehicle::class, 'vehicle_id');
     }
 }

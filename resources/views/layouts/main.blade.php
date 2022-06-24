@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="{{ asset('css/layouts/crabo.css') }}">  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid col-lg-8">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid col-lg-8 nav-div">
         <a class="navbar-brand" href="#">Crabo Kft.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
             </li>
         </ul>
         <form class="d-flex">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Ajánlat kérése</button>
+            <a class="btn my-2 my-sm-0 ajanlat" type="submit">Ajánlat kérése</a>
         </form>
         </div>
     </div>
@@ -71,16 +71,19 @@
                     </ul>
                 </div>
 
-                <div class="col-4 offset-1">
-                    <form>
-                    <h5>Iratkozz fel a hírlevelünkre</h5>
-                    <p class="text-muted">Értesülhetsz új járműveinkről, illetve akcióinkról.</p>
-                    <div class="d-flex w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email cím</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email cím">
-                        <button class="btn btn-primary" type="button">Feliratkozás</button>
+                <div class="col-4">
+                    <h5>Itt vagyunk</h5>
+                    <div class="map">
+                        <iframe width="400" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest,%20Gy%C3%B6mr%C5%91i%20%C3%BAt%20140,%201103&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
-                    </form>
+                </div>
+                <div class="col-2">
+                    <h5>Nyitvatartás</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">H-P: 10:00 - 18:00</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sz: 8:00 - 20:00</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">V: 10:00 - 18:00</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="d-flex justify-content-center pt-4 mt-4 border-top">

@@ -18,7 +18,7 @@ class CreateCargoSpacesTable extends Migration
             $table->integer('height');
             $table->integer('width');
             $table->integer('length');
-            $table->foreignId('truck_id');
+            $table->foreignId('vehicle_id');
         });
     }
 
