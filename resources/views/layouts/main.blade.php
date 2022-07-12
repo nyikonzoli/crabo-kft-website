@@ -34,14 +34,17 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kapcsolat</a>
+                <a class="nav-link" href="">Kapcsolat</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Szabályzat</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('crabo.partner') }}">Partnerek</a>
+            </li>
         </ul>
         <form class="d-flex">
-            <a class="btn my-2 my-sm-0 ajanlat" type="submit">Ajánlat kérése</a>
+            <a class="btn my-2 my-sm-0 ajanlat" href="{{ route('crabo.offer') }}">Ajánlat kérése</a>
         </form>
         </div>
     </div>

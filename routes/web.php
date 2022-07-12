@@ -81,3 +81,5 @@ Route::get('/jarmuvek/furgonok', [CraboController::class, 'vans'])->name('crabo.
 Route::get('/jarmuvek/{id}', [CraboController::class, 'vehicle'])->name('crabo.vehicle');
 Route::get('/ajanlat', [CraboController::class, 'offer'])->name('crabo.offer');
 Route::post('/email', [CraboController::class, 'email'])->name('crabo.email');
+Route::get('/partnerek', [CraboController::class, 'partner'])->name('crabo.partner');
+Route::get('/kapcsolat', [CraboController::class, 'contact'])->name('crabo.contact');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\VehicleType;
 use App\Models\Vehicle;
+use App\Models\Partner;
 use App\Http\Requests\SendEmailRequest;
 
 class CraboController extends Controller
@@ -53,5 +54,14 @@ class CraboController extends Controller
     public function email(SendEmailRequest $request){
         $data = $request->validated();
         dd($data);
+    }
+
+    public function partner(){
+        $partners = Partner::all();
+        return view('crabo.partners')->with('partners', $partners);
+    }
+
+    public function contact(){
+        return view('crabo.contact');
     }
 }
