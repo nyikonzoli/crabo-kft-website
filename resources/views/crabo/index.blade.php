@@ -8,11 +8,262 @@
 
 @section('content')
     <div class="content">
-        <div class="top">
-            <h1>CRABO</h1>
-            <h4>Az autóbérlés sok esetben jelent gyors és költséghatékony megoldást. Folyamatosan
-fejlődő autóflottánk áll kedves ügyfeleink részére a hét minden napján! Legyen szó
-külföldi nyaralásról, költözésről, pár napos wellnessről. ( A Crabo Rent megoldja! )</h4>
+        <div class="top-wrapper">
+            <div class="top col-lg-8 mx-auto">
+                <div class="col-lg-6 left">
+                    <h2>Cégünk évek óta megoldást nyújt az autóbérlésre, legyen szó bármilyen helyzetről is.</h2>
+                </div>
+                <div class="col-lg-6 right">
+                    <div id="top-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rolunk-wrapper  ">
+            <div class="col-lg-8 mx-auto">
+                <div style="text-align:center" class="py-3">
+                    <h1 class="rolunk">RÓLUNK RÖVIDEN</h1>
+                    <p class="col-lg-7 mx-auto rolunk-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore tempora reiciendis saepe in quod id facere tenetur similique ipsam, dignissimos eaque, cupiditate nemo nam ex earum voluptate nobis ratione.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 mx-auto">
+            <h1 class="title">Személyautók</h1>
+            <div class="cars-wrapper">
+              <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="image-container">
+                  <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                  <span class="action">
+                    <div class="inner-div">
+                        <ul>
+                          <li>4 személyes</li>
+                          <li>Manuális váltó</li>
+                          <li class="break"></li>
+                          <li>1 napra: 10999 Ft/nap</li>
+                          <li>7 napra: 9500 Ft/nap</li>
+                          <li>1 hónapra: 8799 Ft/nap</li>
+                        </ul>
+                    </div>
+                  </span>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                    <div class="price-wrapper">
+                      <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                    </div>
+                  </div>
+              </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-div col-lg-8 mx-auto">
+          <a href="" class="btn car-type-btn">További személyautók megtekintése</a>
+        </div>
+        <div class="col-lg-8 mx-auto">
+            <h1 class="title">Teherautók</h1>
+            <div class="cars-wrapper">
+              <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="image-container">
+                  <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                  <span class="action">
+                    <div class="inner-div">
+                        <ul>
+                          <li>4 személyes</li>
+                          <li>Manuális váltó</li>
+                          <li class="break"></li>
+                          <li>1 napra: 10999 Ft/nap</li>
+                          <li>7 napra: 9500 Ft/nap</li>
+                          <li>1 hónapra: 8799 Ft/nap</li>
+                        </ul>
+                    </div>
+                  </span>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                    <div class="price-wrapper">
+                      <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                    </div>
+                  </div>
+              </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-div col-lg-8 mx-auto">
+          <a href="" class="btn car-type-btn">További teherautók megtekintése</a>
+        </div>
+        <div class="rolunk-wrapper  ">
+            <div class="col-lg-8 mx-auto">
+                <div style="text-align:center" class="py-3">
+                    <h1 class="rolunk">AZ AUTÓBÉRLÉS FOLYAMATA</h1>
+                    <p class="col-lg-7 mx-auto rolunk-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore tempora reiciendis saepe in quod id facere tenetur similique ipsam, dignissimos eaque, cupiditate nemo nam ex earum voluptate nobis ratione.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-11 col-sm-11 mx-auto">
+            <h1 class="title">Furgonok</h1>
+            <div class="cars-wrapper row">
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-10">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-div col-lg-8 mx-auto">
+          <a href="" class="btn car-type-btn">További furgonok megtekintése</a>
         </div>
     </div>
 @endsection

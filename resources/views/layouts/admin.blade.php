@@ -23,6 +23,7 @@
                 <li><a href="{{ route('bodywork.index') }}"><i class="fa-solid fa-car-rear"></i>Karosszériák</a></li>
                 <li><a href="{{ route('gearbox.index') }}"><i class="fa-solid fa-gears"></i>Sebességváltók</a></li>
                 <li><a href="{{ route('fuel.index') }}"><i class="fa-solid fa-gas-pump"></i>Üzemanyagok</a></li>
+                <li><a href="{{ route('partner.index') }}"><i class="fa-regular fa-handshake"></i>Partnerek</a></li>
             </ul>
         </div>
         <div class="main">

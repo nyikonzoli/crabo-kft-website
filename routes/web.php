@@ -10,6 +10,7 @@ use App\Http\Controllers\BodyworkController;
 use App\Http\Controllers\FuelTypeController;
 use App\Http\Controllers\PassengerCarController;
 use App\Http\Controllers\VehicleController;
+use App\Http\Controllers\PartnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,9 +62,22 @@ Route::put('admin/uzemanyagok/{id}', [FuelTypeController::class, 'update'])->mid
 Route::get('/admin/jarmuvek', [VehicleController::class, 'index'])->middleware('auth.basic')->name('vehicle.index');
 Route::post('/admin/jarmuvek', [VehicleController::class, 'store'])->middleware('auth.basic')->name('vehicle.store');
 Route::delete('admin/jarmuvek/{id}', [VehicleController::class, 'destroy'])->middleware('auth.basic')->name('vehicle.destroy');
+Route::get('admin/jarmuvek/{id}', [VehicleController::class, 'show'])->middleware('auth.basic')->name('vehicle.show');
 Route::put('admin/jarmuvek/{id}', [VehicleController::class, 'update'])->middleware('auth.basic')->name('vehicle.update');
+
+//Partner
+Route::get('/admin/partnerek', [PartnerController::class, 'index'])->middleware('auth.basic')->name('partner.index');
+Route::post('/admin/partnerek', [PartnerController::class, 'store'])->middleware('auth.basic')->name('partner.store');
+Route::delete('admin/partnerek/{id}', [PartnerController::class, 'destroy'])->middleware('auth.basic')->name('partner.destroy');
 
 ///////
 //Crabo
 ///////
 Route::get('/', [CraboController::class, 'index'])->name('crabo.index');
+Route::get('/jarmuvek/szemelyautok', [CraboController::class, 'passengerCars'])->name('crabo.passanger-cars');
+Route::get('/jarmuvek/elektromosautok', [CraboController::class, 'electricCars'])->name('crabo.electric-cars');
+Route::get('/jarmuvek/teherautok', [CraboController::class, 'trucks'])->name('crabo.trucks');
+Route::get('/jarmuvek/furgonok', [CraboController::class, 'vans'])->name('crabo.vans');
+Route::get('/jarmuvek/{id}', [CraboController::class, 'vehicle'])->name('crabo.vehicle');
+Route::get('/ajanlat', [CraboController::class, 'offer'])->name('crabo.offer');
+Route::post('/email', [CraboController::class, 'email'])->name('crabo.email');

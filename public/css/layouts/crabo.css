@@ -13,11 +13,12 @@ iframe{
 }
 
 .navbar{
-    background-color: #fcde67;
+    background-color: #FF7D00;
+    color: white
 }
 
 .navbar a{
-    color: #030e12;
+    color: white;
 }
 
 .nav-link:hover{

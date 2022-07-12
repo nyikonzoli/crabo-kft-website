@@ -27,10 +27,10 @@
                     Járműveink
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Elektromos autók</a></li>
-                    <li><a class="dropdown-item" href="#">Személyautók</a></li>
-                    <li><a class="dropdown-item" href="#">Furgonok</a></li>
-                    <li><a class="dropdown-item" href="#">Teherautók</a></li>
+                    <li><a class="dropdown-item" href="{{ route('crabo.electric-cars') }}">Elektromos autók</a></li>
+                    <li><a class="dropdown-item" href="{{ route('crabo.passanger-cars') }}">Személyautók</a></li>
+                    <li><a class="dropdown-item" href="{{ route('crabo.vans') }}">Furgonok</a></li>
+                    <li><a class="dropdown-item" href="{{ route('crabo.trucks') }}">Teherautók</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -92,5 +92,6 @@
         </footer>
     </div>
     </div>
+    @yield('script')
 </body>
 </html>

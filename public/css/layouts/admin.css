@@ -57,3 +57,7 @@ body{
 a{
     text-decoration: none;
 }
+
+.modal{
+    margin-left: 150px;
+}

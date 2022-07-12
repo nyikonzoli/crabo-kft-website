@@ -13,26 +13,26 @@
         </div>
         <h1 class="article-title">Járművek</h1>
         <div class="boxes">
-            <div class="box box-shape box-black">
+            <a class="box box-shape box-black clickable" href="{{ route('vehicle.index') . '?type=all' }}">
                 <h1>{{ $data["vehicles"] }}</h1>
                 <p>jármű összesen</p>
-            </div>
-            <div class="box box-shape box-blue clickable">
+            </a>
+            <a class="box box-shape box-blue clickable" href="{{ route('vehicle.index') . '?type=1' }}">
                 <h1>{{ $data["passengerCars"] }}</h1>
                 <p>személyautó</p>
-            </div>
-            <div class="box box-shape box-green clickable">
+            </a>
+            <a class="box box-shape box-green clickable" href="{{ route('vehicle.index') . '?type=2' }}">
                 <h1>{{ $data["vans"] }}</h1>
                 <p>furgon</p>
-            </div>
-            <div class="box box-shape box-pink clickable">
+            </a>
+            <a class="box box-shape box-pink clickable" href="{{ route('vehicle.index') . '?type=3' }}">
                 <h1>{{ $data["trucks"] }}</h1>
                 <p>teherautó</p>
-            </div>
-            <div class="box box-shape box-red clickable">
+            </a>
+            <a class="box box-shape box-red clickable"  href="{{ route('vehicle.index') . '?type=4' }}">
                 <h1>0</h1>
                 <p>elektromos autó</p>
-            </div>
+            </a>
         </div>
         <h1 class="article-title">Típusok</h1>
         <div class="boxes">

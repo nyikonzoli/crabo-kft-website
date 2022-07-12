@@ -1,144 +1,118 @@
 @extends('layouts.admin')
 
-@section('title', 'Crabo - Járművek')
+@section('title', 'Crabo - ' . $vehicle->plate)
 
 @section('head')
-    <link rel="stylesheet" href="{{ asset('css/admin/type.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin/vehicle.css') }}">
 @endsection
 
 @section('content')
     <div class="col-lg-8 mx-auto">
-        <h1>Járművek</h1>
-        <button onclick="newType()" class="btn btn-primary new-type"><i class="fa-solid fa-square-plus"></i>Új jármű hozzáadása</button>
-        <p>Összes jármű:</p>
-        <table class="col-lg-5 table table-striped" id="types">
-            @foreach($vehicles as $vehicle)
-                <tr>
-                    <td><p class="my-auto">{{ $vehicle->plate }}</p></td>
-                    <td><p class="my-auto">{{ $vehicle->brand . " " . $vehicle->model }}</p></td>
-                    <td><p class="my-auto">{{ $vehicle->type }}</p></td>
-                    <td class="buttons">
-                        <button class="btn btn-primary" onclick="updateGearbox('{{ route("vehicle.update", ["id" => $vehicle->id]) }}', '{{ $vehicle->type }}')">Módosítás</button>
-                        <button class="btn btn-danger" onclick="deleteGearbox('{{ route("vehicle.destroy", ["id" => $vehicle->id]) }}', '{{ $vehicle->type }}')">Törlés</button>
-                    </td>
-                </tr>
-            @endforeach
-        </table>
-    </div>
-
-    <div class="modal" id="newModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Újfajta jármű felvétele</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1>{{ $vehicle->brand . " " . $vehicle->model }}</h1>
+        {{ Form::open(["route" => ['vehicle.update', 'id' => $vehicle->id], "method" => "put", "id" => "uploadForm", "enctype" => "multipart/form-data"]) }}
+            <div class="mb-3">
+                {{ Form::label('plate', 'Rendszám', ["class" => "form-label"]) }}
+                {{ Form::text('plate', $vehicle->plate, ["class" => "form-control short-input", "id" => "plate"]) }}            
             </div>
-            {{ Form::open(["route" => "vehicle.store", "method" => "post", "id" => "newTypeForm"]) }}
-            <div class="modal-body">
-                {{ Form::label('plate', 'Kérem adja meg az új jármű rendszámát', ["class" => "form-label"]) }}
-                {{ Form::text('plate', "", ["class" => "form-control", "placeholder" => "Új jármű rendszámtáblája", "id" => "newTypeText"]) }}
-                <div id="newModalError" class="form-text error">A mező kitöltése kötelező!</div>
+            <div class="mb-3">
+                {{ Form::label('brand', 'Márka', ["class" => "form-label"]) }}
+                {{ Form::text('brand', $vehicle->brand, ["class" => "form-control", "id" => "brand"]) }}            
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
-                <button type="button" onclick="submitNewType()" class="btn btn-primary">Felvétel</button>
+            <div class="mb-3">
+                {{ Form::label('model', 'Model', ["class" => "form-label"]) }}
+                {{ Form::text('model', $vehicle->model, ["class" => "form-control", "id" => "model"]) }}            
             </div>
-            {{ Form::close() }}
+            <div class="mb-3">
+                {{ Form::label('year', 'Gyártási év', ["class" => "form-label"]) }}
+                {{ Form::text('year', $vehicle->year, ["class" => "form-control short-input", "onkeypress" => "validate(event)", "id" => "year"]) }}            
             </div>
-        </div>
-    </div>
-
-    <div class="modal" id="deleteModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Meglévő jármű törlése</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="mb-3">
+                {{ Form::label('doors', 'Ajtók száma', ["class" => "form-label"]) }}
+                {{ Form::text('doors', $vehicle->doors, ["class" => "form-control short-input", "onkeypress" => "validate(event)", "id" => "doors"]) }}            
             </div>
-            <div class="modal-body">
-                <p id="deleteModalText">Biztosan törölni szeretné a kiválasztott járművet?</p>
+            <div class="mb-3">
+                {{ Form::label('seats', 'Ülések száma', ["class" => "form-label"]) }}
+                {{ Form::text('seats', $vehicle->seats, ["class" => "form-control short-input", "onkeypress" => "validate(event)", "id" => "seats"]) }}            
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
-                {{ Form::open(["id" => "deleteForm", "method" => "delete"]) }}
-                    {{ Form::submit('Torlés', ['class' => 'btn btn-primary']) }}
-                {{ Form::close() }}
+            <div class="mb-3">
+                {{ Form::label('outer_color', 'Külső szín', ["class" => "form-label"]) }}
+                {{ Form::text('outer_color', $vehicle->outer_color, ["class" => "form-control", "id" => "outer_color"]) }}            
             </div>
-            {{ Form::close() }}
+            <div class="mb-3">
+                {{ Form::label('inner_color', 'Belső szín', ["class" => "form-label"]) }}
+                {{ Form::text('inner_color', $vehicle->inner_color, ["class" => "form-control", "id" => "inner_color"]) }}            
             </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modifyModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Meglévő jármű módosítása</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="mb-3">
+                {{ Form::label('vehicle_type_id', 'Jármű típusa', ["class" => "form-label"]) }}
+                {{ Form::select('vehicle_type_id', $vehicleTypes, $vehicle->vehicle_type_id, ["class" => "form-control", "id" => "vehicle_type_id"]) }}            
             </div>
-            {{ Form::open(["route" => "vehicle.store", "method" => "put", "id" => "modifyForm"]) }}
-            <div class="modal-body">
-                {{ Form::text('type', "", ["class" => "form-control", "id" => "type"]) }}
-                <div id="modifyModalError" class="form-text error">A mező kitöltése kötelező!</div>
+            <div class="mb-3">
+                {{ Form::label('bodywork_type_id', 'Karosszéria típusa', ["class" => "form-label"]) }}
+                {{ Form::select('bodywork_type_id', $bodyworkTypes, $vehicle->bodywork_type_id, ["class" => "form-control", "id" => "bodywork_type_id"]) }}            
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
-                <button type="button" onclick="submitModifiedType()" class="btn btn-primary">Módosítás</button>
+            <div class="mb-3">
+                {{ Form::label('gearbox_type_id', 'Sebességváltó típusa', ["class" => "form-label"]) }}
+                {{ Form::select('gearbox_type_id', $gearboxTypes, $vehicle->gearbox_type_id, ["class" => "form-control" ,"id" => "gearbox_type_id"]) }}            
             </div>
-            {{ Form::close() }}
+            <div class="mb-3">
+                {{ Form::label('fuel_type_id', 'Üzemanyag típusa', ["class" => "form-label"]) }}
+                {{ Form::select('fuel_type_id', $fuelTypes, $vehicle->fuel_type_id, ["class" => "form-control", "id" => "fuel_type_id"]) }}            
             </div>
-        </div>
+            <div class="mb-3">
+                {{ Form::label('description', 'Leírás', ["class" => "form-label"]) }}
+                {{ Form::textarea('description', $vehicle->description, ["class" => "form-control", "id" => "description"]) }}            
+            </div>
+            <div class="mb-3">
+                {{ Form::label('motor', 'Motor', ["class" => "form-label"]) }}
+                {{ Form::textarea('motor', $vehicle->motor, ["class" => "form-control", "rows" => 2, "id" => "motor"]) }}            
+            </div>
+            <div class="mb-3">
+                <label for="images" class="form-label">Képek</label>
+                <input class="form-control" type="file" id="images" name="images[]" multiple>
+                <div id="preview"></div>
+            </div>
+            <label class="form-label">Kiegészítők</label>
+            <div class="mb-3 mx-3">
+                @foreach ( $equipments as $i => $equipment )
+                {!! Form::checkbox( 'equipments[' . $i . ']', 
+                                $equipment,
+                                (in_array($i, array_column($equipment_vehicle->toArray(), 'equipment_id'))),
+                                ['class' => 'md-check mr-2', 'id' => $equipment] 
+                                ) !!}
+                {!! Form::label($equipment,  $equipment) !!}
+                <br>
+                @endforeach
+            </div>
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            <a class="btn btn-primary mb-3 save">Mentés</a>
+        {{ Form::close() }}
     </div>
 @endsection
 
 @section('script')
-    <script>
-        function newType(){
-            var newModal = new bootstrap.Modal(document.getElementById('newModal'), {
-                keyboard: false
-            })
-            document.getElementById('newModalError').style.display = "none";
-            newModal.show();
-
+<script>
+    function validate(evt) {
+        var theEvent = evt || window.event;
+        if (theEvent.type === 'paste') {
+            key = event.clipboardData.getData('text/plain');
+        } else {
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
         }
+        var regex = /[0-9]|\./;
+        if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+        }                     
+    }
+</script>
 
-        function submitNewType(){
-            text = document.getElementById('newTypeText').value;
-            if (text.length > 0){
-                document.getElementById('newTypeForm').submit();
-            }
-            else{
-                document.getElementById('newModalError').style.display = "inline";
-            }
-        }
-
-        function deleteGearbox(url, type){
-            var deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'), {
-                keyboard: false
-            });
-            document.getElementById('deleteModalText').innerHTML = "Biztosan törölni szeretné a(z) " + type + " sebességváltó típust?";
-            document.getElementById('deleteForm').action = url;
-            deleteModal.show();
-        }
-
-        function updateGearbox(url, type){
-            var updateModal = new bootstrap.Modal(document.getElementById('modifyModal'), {
-                keyboard: false
-            });
-            document.getElementById('modifyForm').action = url;
-            document.getElementById('type').value = type;
-            document.getElementById('modifyModalError').style.display = "none";
-            updateModal.show();
-        }
-
-        function submitModifiedType(){
-            text = document.getElementById('type').value;
-            if (text.length > 0){
-                document.getElementById('modifyForm').submit();
-            }
-            else{
-                document.getElementById('modifyModalError').style.display = "inline";
-            }
-        }
-    </script>
-@endsection()
+@endsection

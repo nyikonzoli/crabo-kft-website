@@ -2,16 +2,176 @@
     width: 100%;
 }
 
-.top{
-    width: 100%;
-    height: 600px;
-    background-color: #fcde67;
-    overflow: hidden;
+.top-wrapper{
+    background-color: #15616D;
+
 }
 
-.top > h1{
-    font-size: 2000%;
-    text-shadow: -8px -8px 0 #5bccf6, 8px -8px 0 #5bccf6, -8px 8px 0 #5bccf6, 8px 8px 0 #5bccf6;
-    color: #fcde67;
-    margin-top: 65px;
+.top{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+#top-img{
+    width: 300px;
+    height: 300px;
+    background-image: url("http://localhost:8881/images/shs-776-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 4px solid #FF7D00;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.rolunk{
+    letter-spacing: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    font-size: 375%;
+}
+
+.rolunk-p{
+    font-size: 150%;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+
+.title{
+    letter-spacing: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    font-size: 300%;
+}
+
+.rolunk-wrapper{
+    background-color: #FFECD1;
+}
+
+.cars-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.card{
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card-body{
+    background-color: #15616D;
+    color: white;
+}
+
+.price{
+    color: #FF7D00;
+    font-weight: bolder;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.price-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card:hover .action{
+    opacity: 1;
+}
+
+.action{
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(29,29,29,.7);
+    -ms-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.image-container{
+    position: relative;
+}
+
+.inner-div{
+    width: 100%;
+    height: 100%;
+    pad: 16px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    font-size: 140%;
+    line-height: 160%;
+    padding: 0px;
+}
+
+.break{
+    height: 16px;
+}
+
+.button-div{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+.car-type-btn{
+    border-color: #FF7D00;
+    font-size: 140%;
+    color: #FF7D00;
+}
+
+.car-type-btn:hover{
+    background-color: #FF7D00;
+    color: white;
+}
+
+.vehicles-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

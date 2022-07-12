@@ -10,7 +10,7 @@ class Vehicle extends Model
     protected $table = 'vehicles';
     public $timestamps = false;
     protected $fillable = [
-        "palte",
+        "plate",
         "year",
         "fuel_type_id",
         "doors",
@@ -22,7 +22,8 @@ class Vehicle extends Model
         "outer_color",
         "inner_color",
         "motor",
-        "description"
+        "description",
+        "vehicle_type_id",
     ];
 
     public function packages(){
