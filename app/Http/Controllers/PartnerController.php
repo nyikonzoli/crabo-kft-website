@@ -16,7 +16,7 @@ class PartnerController extends Controller
 
     public function store(StorePartnerRequest $request){
         $data = $request->validated();
-        $uri = Storage::put("images/partners", $data["image"]);
+        $uri = Storage::put("partners", $data["image"]);
         $data["uri"] = $uri;
         $partner = Partner::create($data);
         return redirect()->back();

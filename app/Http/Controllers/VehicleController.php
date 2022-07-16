@@ -93,7 +93,7 @@ class VehicleController extends Controller
         $vehicle->equipments()->attach(array_keys($request->equipments));
         if(count($data["images"]) > 0){
             foreach ($data["images"] as $image) {
-                $uri = Storage::put("images/" . $data["plate"], $image);
+                $uri = Storage::put("vehicles" . $data["plate"], $image);
                 Image::create([
                     "vehicle_id" => $vehicle->id,
                     "uri" => $uri,

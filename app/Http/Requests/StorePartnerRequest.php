@@ -30,7 +30,6 @@ class StorePartnerRequest extends FormRequest
             ],
             "image" => [
                 "required",
-                "image"
             ]
         ];
     }

@@ -83,3 +83,4 @@ Route::get('/ajanlat', [CraboController::class, 'offer'])->name('crabo.offer');
 Route::post('/email', [CraboController::class, 'email'])->name('crabo.email');
 Route::get('/partnerek', [CraboController::class, 'partner'])->name('crabo.partner');
 Route::get('/kapcsolat', [CraboController::class, 'contact'])->name('crabo.contact');
+Route::get('/szabályok', [CraboController::class, 'rules'])->name('crabo.rules');

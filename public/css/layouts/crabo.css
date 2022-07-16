@@ -22,15 +22,47 @@ iframe{
 }
 
 .nav-link:hover{
-    color: #3a3a3a
+    color: #000000
 }
 
+
 .ajanlat{
-    color: #030e12;
-    border-color: #030e12;
+    color: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
 }
 
 .ajanlat:hover{
-    background-color: #030e12;
-    color: #fcde67;
+    background-color: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    color: #FF7D00;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.footer-content-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-content > ul{
+    text-align: center;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.navbar-toggler{
+    z-index: 1000;
 }

@@ -7,20 +7,21 @@
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('head')
+    <script src="https://kit.fontawesome.com/0a894acb29.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/layouts/crabo.css') }}">  
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid col-lg-8 nav-div">
-        <a class="navbar-brand" href="#">Crabo Kft.</a>
+    <div class="container-fluid col-xl-8 col-lg-12 nav-div">
+        <a class="navbar-brand" href="{{ route('crabo.index') }}">Crabo Rent</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-                <a class="nav-link active" href="#">Főoldal</a>
+                <a class="nav-link active" href="{{ route('crabo.index') }}">Főoldal</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,10 +35,10 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Kapcsolat</a>
+                <a class="nav-link" href="{{ route('crabo.contact') }}">Kapcsolat</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Szabályzat</a>
+                <a class="nav-link" href="{{ route('crabo.rules') }}">Szabályzat</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('crabo.partner') }}">Partnerek</a>
@@ -54,8 +55,8 @@
     <div class="footer-div">
     <div class="container mx-auto">
         <footer class="py-5 ">
-            <div class="row justify-content-center" style="color: white">
-                <div class="col-2">
+            <div class="footer-content-wrapper" style="color: white">
+                <div class="col-xxl-2 col-lg-3 order-lg-1 col-md-6 mb-3 footer-content">
                     <h5>Járműveink</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Elektromos autók</a></li>
@@ -64,8 +65,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teheratók</a></li>
                     </ul>
                 </div>
-
-                <div class="col-2">
+                <div class="col-xxl-2 order-xxl-2 col-lg-3 order-lg-3 col-md-6 mb-3 footer-content">
                     <h5>Egyéb</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kapcsolat</a></li>
@@ -74,13 +74,13 @@
                     </ul>
                 </div>
 
-                <div class="col-4">
+                <div class="col-xxl-4 order-xxl-3 col-lg-6 order-lg-2 col-md-12 mb-3 footer-content">
                     <h5>Itt vagyunk</h5>
                     <div class="map">
-                        <iframe width="400" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest,%20Gy%C3%B6mr%C5%91i%20%C3%BAt%20140,%201103&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe width="100%" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Budapest,%20Gy%C3%B6mr%C5%91i%20%C3%BAt%20140,%201103&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xxl-2 col-lg-6 order-lg-4 mb-3 footer-content">
                     <h5>Nyitvatartás</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">H-P: 10:00 - 18:00</a></li>

@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="rolunk-wrapper  ">
+        <div class="rolunk-wrapper">
             <div class="col-lg-8 mx-auto">
                 <div style="text-align:center" class="py-3">
                     <h1 class="rolunk">RÓLUNK RÖVIDEN</h1>
@@ -34,7 +34,7 @@
                   <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
                   <span class="action">
                     <div class="inner-div">
-                        <ul>
+                        <ul class="card-list">
                           <li>4 személyes</li>
                           <li>Manuális váltó</li>
                           <li class="break"></li>
@@ -264,6 +264,44 @@
         </div>
         <div class="button-div col-lg-8 mx-auto">
           <a href="" class="btn car-type-btn">További furgonok megtekintése</a>
+        </div>
+        <div class="button-div col-lg-8 mx-auto">
+          <h1>KÉRJEN AJÁNLATOT</h1>
+          <div>
+            {{ Form::open(["route" => "crabo.email"]) }}
+                <div class="mb-3">
+                    {{ Form::label('name', 'Név', ["class" => "form-label"]) }}
+                    {{ Form::text('name', '', ["class" => "form-control"]) }}
+                </div>
+                <div class="mb-3">
+                    {{ Form::label('email', 'Email', ["class" => "form-label"]) }}
+                    {{ Form::text('email', 'example@example.com', ["class" => "form-control"]) }}
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        {{ Form::radio('role', 'magan', true, ["class" => "form-check-input"]) }}
+                        {{ Form::label('role', 'Magánszemély', ["class" => "form-label"]) }}
+                    </div>
+                    <div class="form-check">
+                        {{ Form::radio('role', 'ceg', false, ["class" => "form-check-input"]) }}
+                        {{ Form::label('role', 'Cég', ["class" => "form-label"]) }}
+                    </div>
+                </div>
+                <div class="mb-3">
+                    {{ Form::label('company', 'Cégnév', ["class" => "form-label"]) }}
+                    {{ Form::text('company', '', ["class" => "form-control"]) }}
+                </div>
+                <div class="mb-3">
+                    {{ Form::label('tax', 'Adóazonosító jel', ["class" => "form-label"]) }}
+                    {{ Form::text('tax', '', ["class" => "form-control"]) }}
+                </div>
+                <div class="mb-3">
+                    {{ Form::label('content', 'Tartalom', ["class" => "form-label"]) }}
+                    {{ Form::textarea('content', '', ["class" => "form-control"]) }}
+                </div>
+                {{ Form::submit('Ajánlat kérése') }}
+            {{ Form::close() }}
+          </div>
         </div>
     </div>
 @endsection

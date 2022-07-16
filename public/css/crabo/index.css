@@ -141,7 +141,7 @@
     justify-content: center;
 }
 
-ul{
+.card-list{
     list-style: none;
     font-size: 140%;
     line-height: 160%;

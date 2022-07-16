@@ -16,7 +16,7 @@
         <div class="partners">
             @foreach($partners as $partner)
                 <div class="card" style="width: 18rem; margin:1rem;">
-                    <img src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" class="card-img-top" alt="...">
+                    <img src="{{ asset($partner->uri) }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title" style="text-align:center">{{ $partner->name }}</h5>
                     </div>

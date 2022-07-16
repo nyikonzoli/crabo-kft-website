@@ -64,4 +64,8 @@ class CraboController extends Controller
     public function contact(){
         return view('crabo.contact');
     }
+
+    public function rules(){
+        return view('crabo.rules');
+    }
 }
