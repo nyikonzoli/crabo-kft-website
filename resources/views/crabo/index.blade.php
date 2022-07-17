@@ -28,10 +28,10 @@
         </div>
         <div class="col-lg-8 mx-auto">
             <h1 class="title">Személyautók</h1>
-            <div class="cars-wrapper">
-              <div class="card col-lg-4 col-md-6 col-sm-10">
+            <div class="cars-wrapper row">
+            <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                 <div class="image-container">
-                  <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                  <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                   <span class="action">
                     <div class="inner-div">
                         <ul class="card-list">
@@ -52,9 +52,9 @@
                     </div>
                   </div>
               </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+              <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -75,9 +75,9 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -105,10 +105,10 @@
         </div>
         <div class="col-lg-8 mx-auto">
             <h1 class="title">Teherautók</h1>
-            <div class="cars-wrapper">
-              <div class="card col-lg-4 col-md-6 col-sm-10">
+            <div class="cars-wrapper row">
+            <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                 <div class="image-container">
-                  <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                  <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                   <span class="action">
                     <div class="inner-div">
                         <ul>
@@ -129,9 +129,9 @@
                     </div>
                   </div>
               </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+              <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -152,9 +152,9 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/shs-776-1.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -191,9 +191,9 @@
         <div class="col-lg-8 col-md-11 col-sm-11 mx-auto">
             <h1 class="title">Furgonok</h1>
             <div class="cars-wrapper row">
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -214,9 +214,9 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -237,9 +237,9 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-10">
+                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
                   <div class="image-container">
-                    <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
                       <div class="inner-div">
                           <ul>
@@ -265,8 +265,8 @@
         <div class="button-div col-lg-8 mx-auto">
           <a href="" class="btn car-type-btn">További furgonok megtekintése</a>
         </div>
-        <div class="button-div col-lg-8 mx-auto">
-          <h1>KÉRJEN AJÁNLATOT</h1>
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-xs-10 email mx-auto">
+          <h1 style="text-align: center;" id="email-text">KÉRJEN AJÁNLATOT</h1>
           <div>
             {{ Form::open(["route" => "crabo.email"]) }}
                 <div class="mb-3">
@@ -279,19 +279,19 @@
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
-                        {{ Form::radio('role', 'magan', true, ["class" => "form-check-input"]) }}
+                        {{ Form::radio('role', 'magan', true, ["class" => "form-check-input", "onclick" => "magan();"]) }}
                         {{ Form::label('role', 'Magánszemély', ["class" => "form-label"]) }}
                     </div>
                     <div class="form-check">
-                        {{ Form::radio('role', 'ceg', false, ["class" => "form-check-input"]) }}
+                        {{ Form::radio('role', 'ceg', false, ["class" => "form-check-input", "onclick" => "ceg();"]) }}
                         {{ Form::label('role', 'Cég', ["class" => "form-label"]) }}
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="company" style="display: none">
                     {{ Form::label('company', 'Cégnév', ["class" => "form-label"]) }}
                     {{ Form::text('company', '', ["class" => "form-control"]) }}
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="tax" style="display: none">
                     {{ Form::label('tax', 'Adóazonosító jel', ["class" => "form-label"]) }}
                     {{ Form::text('tax', '', ["class" => "form-control"]) }}
                 </div>
@@ -299,9 +299,27 @@
                     {{ Form::label('content', 'Tartalom', ["class" => "form-label"]) }}
                     {{ Form::textarea('content', '', ["class" => "form-control"]) }}
                 </div>
-                {{ Form::submit('Ajánlat kérése') }}
+                <div style="text-align: center">
+                  {{ Form::submit('Ajánlat kérése', ["class" => "btn btn-email mb-3"]) }}
+                </div>
             {{ Form::close() }}
           </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+  <script>
+    function magan(){
+      document.getElementById("company").style.display = "none";
+      document.getElementById("tax").style.display = "none";
+    }
+
+    function ceg(){
+      document.getElementById("company").style.display = "block";
+      document.getElementById("tax").style.display = "block";
+    }
+
+
+  </script>
 @endsection

@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .content{
     width: 100%;
 }
@@ -43,16 +47,16 @@
 
 .rolunk{
     letter-spacing: 1rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: lighter;
-    font-size: 375%;
+    font-size: 300%;
 }
 
 .rolunk-p{
-    font-size: 150%;
+    font-size: 120%;
     font-weight: lighter;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .title{
@@ -60,7 +64,6 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: lighter;
-    font-size: 300%;
 }
 
 .rolunk-wrapper{
@@ -71,11 +74,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 3rem;
 }
 
 .card{
     border: none;
+    max-width: 350px;
+    min-width: 300px;
     padding-left: 8px;
     padding-right: 8px;
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -160,7 +164,6 @@
 
 .car-type-btn{
     border-color: #FF7D00;
-    font-size: 140%;
     color: #FF7D00;
 }
 
@@ -174,4 +177,43 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.btn-email{
+    color: #15616D;
+    border-color: #15616D;
+    background-color: white;
+    margin-bottom: 5rem;
+}
+
+.btn-email:hover{
+    background-color: #15616D;
+    color: white;
+}
+
+#email-text{
+    letter-spacing: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 576px) {
+    .email {
+      width: 90%;
+    }
+
+    .card-card {
+        width: 90%;
+    }
+    
+    .cars-wrapper{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title{
+        text-align: center;
+    }
 }
