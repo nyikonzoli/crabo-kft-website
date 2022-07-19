@@ -8,12 +8,12 @@
 
 @section('content')
     <div class="col-lg-8 mx-auto">
-        <h1 class="title" style="text-align: center; margin-top: 5rem">{{ $title }}</h1>
+        <h1 class="title" style="text-align: center; margin-top: 2rem; margin-bottom: 3rem">{{ $title }}</h1>
         <div class="vehicles-wrapper">
             @foreach ($vehicles as $vehicle)
                 <a class="card col-lg-4 col-md-6 col-sm-10" style="margin-bottom: 2rem" href="{{ route('crabo.vehicle', ['id' => $vehicle->id]) }}">
                     <div class="image-container">
-                        <img class="card-img-top" src="http://localhost:8881/images/AAA-000/97YW2w6JQZRKDZkxa9qor81yHnHZoIuFyhhAkjA6.png" alt="Card image cap">
+                        <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                         <span class="action">
                         <div class="inner-div">
                             <ul>

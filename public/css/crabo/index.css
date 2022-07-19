@@ -6,11 +6,6 @@ body{
     width: 100%;
 }
 
-.top-wrapper{
-    background-color: #15616D;
-
-}
-
 .top{
     height: 500px;
     display: flex;
@@ -53,6 +48,25 @@ body{
     font-size: 300%;
 }
 
+.step{
+    margin: 32px;
+}
+
+.step-text{
+    font-weight: lighter;
+    font-size: 175%;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    text-align: left;
+    width: 100%;
+}
+
+.step-number{
+    font-weight:lighter;
+    font-size: 425%;
+    margin-bottom: 0px;
+}
+
 .rolunk-p{
     font-size: 120%;
     font-weight: lighter;
@@ -66,27 +80,28 @@ body{
     font-weight: lighter;
 }
 
+/* FFECD1*/
+
 .rolunk-wrapper{
-    background-color: #FFECD1;
+    background-color: #ffdaa6;
 }
 
 .cars-wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .card{
     border: none;
-    max-width: 350px;
-    min-width: 300px;
+    width: 350px;
     padding-left: 8px;
     padding-right: 8px;
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
 
+/* 15616D*/
+
 .card-body{
-    background-color: #15616D;
+    background-color: #076979;
     color: white;
 }
 
@@ -157,9 +172,9 @@ body{
 }
 
 .button-div{
-    margin-top: 32px;
-    margin-bottom: 32px;
-    text-align: right;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center;
 }
 
 .car-type-btn{
@@ -180,22 +195,26 @@ body{
 }
 
 .btn-email{
-    color: #15616D;
-    border-color: #15616D;
+    color: #076979;
+    border-color: #076979;
     background-color: white;
     margin-bottom: 5rem;
 }
 
 .btn-email:hover{
-    background-color: #15616D;
+    background-color: #076979;
     color: white;
 }
 
-#email-text{
+.email-text{
     letter-spacing: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-weight: lighter;
+}
+
+.title{
+    text-align: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -213,7 +232,15 @@ body{
         margin-right: auto;
     }
 
-    .title{
-        text-align: center;
+
+}
+
+@media screen and (max-width: 700px) {
+    .top-image{
+        height: 65vw;
     }
+}
+
+.card ul{
+    list-style: none;
 }

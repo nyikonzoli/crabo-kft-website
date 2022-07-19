@@ -9,50 +9,30 @@
 @section('content')
     <div class="content">
         <div class="top-wrapper">
-            <div class="top col-lg-8 mx-auto">
-                <div class="col-lg-6 left">
-                    <h2>Cégünk évek óta megoldást nyújt az autóbérlésre, legyen szó bármilyen helyzetről is.</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{{ asset('img/DSC_2446.jpg') }}" class="d-block w-100 top-image" height="450px" style="object-fit: cover; object-position: 0% 55%">
                 </div>
-                <div class="col-lg-6 right">
-                    <div id="top-img"></div>
+                <div class="carousel-item">
+                  <img src="{{ asset('img/DSC_2470.jpg') }}" class="d-block w-100 top-image" height="450px" style="object-fit: cover; object-position: 0% 75%">
+
                 </div>
+              </div>
             </div>
         </div>
         <div class="rolunk-wrapper">
             <div class="col-lg-8 mx-auto">
                 <div style="text-align:center" class="py-3">
                     <h1 class="rolunk">RÓLUNK RÖVIDEN</h1>
-                    <p class="col-lg-7 mx-auto rolunk-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore tempora reiciendis saepe in quod id facere tenetur similique ipsam, dignissimos eaque, cupiditate nemo nam ex earum voluptate nobis ratione.</p>
+                    <p class="col-lg-7 mx-auto rolunk-p">Cégünk évek óta többféle terelen nyújt megoldást járművek bérlésére. Többek között foglalkozunk zenészekkel szállításával, rendezvénykivitelező cégekkel, illetve magánszemélyeknek is megbízható szolgáltatást nyújtunk. Számos járműtípus közül választhat, mint például személyautók, teherautók és furgonok. Ráadásul a közeljövöben lehetőség nyílik elektromos autók bérlésére is.</p>
                 </div>
             </div>
         </div>
         <div class="col-lg-8 mx-auto">
             <h1 class="title">Személyautók</h1>
-            <div class="cars-wrapper row">
-            <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
-                <div class="image-container">
-                  <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
-                  <span class="action">
-                    <div class="inner-div">
-                        <ul class="card-list">
-                          <li>4 személyes</li>
-                          <li>Manuális váltó</li>
-                          <li class="break"></li>
-                          <li>1 napra: 10999 Ft/nap</li>
-                          <li>7 napra: 9500 Ft/nap</li>
-                          <li>1 hónapra: 8799 Ft/nap</li>
-                        </ul>
-                    </div>
-                  </span>
-                </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Skoda Octavia Combi Style</h5>
-                    <div class="price-wrapper">
-                      <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
-                    </div>
-                  </div>
-              </div>
-              <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+            <div class="cars-wrapper flex-xxl-row flex-xl-row justify-content-xl-center flex-lg-column flex-column align-items-lg-center align-items-md-center align-items-sm-center align-items-center justify-content-xxl-center row">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -75,7 +55,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -98,6 +78,30 @@
                       </div>
                     </div>
                 </div>
+                <div class="card mb-3">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="button-div col-lg-8 mx-auto">
@@ -105,31 +109,8 @@
         </div>
         <div class="col-lg-8 mx-auto">
             <h1 class="title">Teherautók</h1>
-            <div class="cars-wrapper row">
-            <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
-                <div class="image-container">
-                  <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
-                  <span class="action">
-                    <div class="inner-div">
-                        <ul>
-                          <li>4 személyes</li>
-                          <li>Manuális váltó</li>
-                          <li class="break"></li>
-                          <li>1 napra: 10999 Ft/nap</li>
-                          <li>7 napra: 9500 Ft/nap</li>
-                          <li>1 hónapra: 8799 Ft/nap</li>
-                        </ul>
-                    </div>
-                  </span>
-                </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Skoda Octavia Combi Style</h5>
-                    <div class="price-wrapper">
-                      <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
-                    </div>
-                  </div>
-              </div>
-              <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+            <div class="cars-wrapper flex-xxl-row flex-xl-row justify-content-xl-center flex-lg-column flex-column align-items-lg-center align-items-md-center align-items-sm-center align-items-center justify-content-xxl-center row">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -152,7 +133,30 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+                <div class="card mb-3">
+                  <div class="image-container">
+                    <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
+                    <span class="action">
+                      <div class="inner-div">
+                          <ul>
+                            <li>4 személyes</li>
+                            <li>Manuális váltó</li>
+                            <li class="break"></li>
+                            <li>1 napra: 10999 Ft/nap</li>
+                            <li>7 napra: 9500 Ft/nap</li>
+                            <li>1 hónapra: 8799 Ft/nap</li>
+                          </ul>
+                      </div>
+                    </span>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Skoda Octavia Combi Style</h5>
+                      <div class="price-wrapper">
+                        <h4>Akár már </h4><h3 class="price">8799</h3><h4> Ft/nap-tól</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -184,14 +188,43 @@
             <div class="col-lg-8 mx-auto">
                 <div style="text-align:center" class="py-3">
                     <h1 class="rolunk">AZ AUTÓBÉRLÉS FOLYAMATA</h1>
-                    <p class="col-lg-7 mx-auto rolunk-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore tempora reiciendis saepe in quod id facere tenetur similique ipsam, dignissimos eaque, cupiditate nemo nam ex earum voluptate nobis ratione.</p>
+                    <div class="steps d-flex mx-auto justify-content-center flex-wrap">
+                        <div class="step d-flex flex-row alig-items-center" width="200px">
+                            <h1 class="step-number" width="30%">1.</h1>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="step-text">Ajánlat</h1>
+                                <h1 class="step-text">kérése</h1>
+                            </div>
+                        </div>
+                        <div class="step d-flex flex-row alig-items-center" width="200px">
+                            <h1 class="step-number" width="30%">2.</h1>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="step-text">Adatok megadása</h1>
+                                <h1 class="step-text">emailben</h1>
+                            </div>
+                        </div>
+                        <div class="step d-flex flex-row alig-items-center" width="200px">
+                            <h1 class="step-number" width="30%">3.</h1>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="step-text">Kaució</h1>
+                                <h1 class="step-text">fizetése</h1>
+                            </div>
+                        </div>
+                        <div class="step d-flex flex-row alig-items-center" width="200px">
+                            <h1 class="step-number" width="30%">4.</h1>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="step-text">Jármű</h1>
+                                <h1 class="step-text">átvétele</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-md-11 col-sm-11 mx-auto">
+        <div class="col-xxl-9 col-xl-12 col-lg-10 mx-auto">
             <h1 class="title">Furgonok</h1>
-            <div class="cars-wrapper row">
-                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+            <div class="cars-wrapper flex-xxl-row flex-xl-row justify-content-xl-center flex-lg-column flex-column align-items-lg-center align-items-md-center align-items-sm-center align-items-center justify-content-xxl-center row">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -214,7 +247,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -237,7 +270,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-6 col-sm-8 mb-3">
+                <div class="card mb-3">
                   <div class="image-container">
                     <img class="card-img-top" src="http://localhost:8881/vehicles/DSC_2440.jpg" alt="Card image cap">
                     <span class="action">
@@ -266,7 +299,7 @@
           <a href="" class="btn car-type-btn">További furgonok megtekintése</a>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-xs-10 email mx-auto">
-          <h1 style="text-align: center;" id="email-text">KÉRJEN AJÁNLATOT</h1>
+          <h1 style="text-align: center;" class="email-text">KÉRJEN AJÁNLATOT</h1>
           <div>
             {{ Form::open(["route" => "crabo.email"]) }}
                 <div class="mb-3">
@@ -275,7 +308,7 @@
                 </div>
                 <div class="mb-3">
                     {{ Form::label('email', 'Email', ["class" => "form-label"]) }}
-                    {{ Form::text('email', 'example@example.com', ["class" => "form-control"]) }}
+                    {{ Form::text('email', '', ["class" => "form-control"]) }}
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
