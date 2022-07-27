@@ -48,7 +48,11 @@ class CraboController extends Controller
     }
 
     public function offer(){
-        return view('crabo.offer');
+        $vehicles = [];
+        foreach (Vehicle::all() as $vehicle) {
+            $vehicles[$vehicle->id] = $vehicle->brand . " " . $vehicle->model . " (" . $vehicle->plate . ")";
+        }
+        return view('crabo.offer')->with('vehicles', $vehicles);
     }
 
     public function email(SendEmailRequest $request){

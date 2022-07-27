@@ -42,7 +42,7 @@
                         <tbody>
                             <tr>
                                 <td style="width:50%; text-align: center">Email</td>
-                                <td style="width:50%; text-align: center">urogi.istvan@gmail.com</td>
+                                <td style="width:50%; text-align: center">istvan.urogi@crabo.hu</td>
                             </tr>
                             <tr>
                                 <td style="width:50%; text-align: center">Telefonszám</td>
@@ -50,7 +50,7 @@
                             </tr>
                             <tr>
                                 <td style="width:50%; text-align: center">Cím</td>
-                                <td style="width:50%; text-align: center">Budapest, Üllői út 140, 1103</td>
+                                <td style="width:50%; text-align: center">Budapest, Gyömrői út 140, 1103</td>
                             </tr>
                         </tbody>
                     </table>

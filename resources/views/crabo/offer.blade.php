@@ -12,6 +12,10 @@
           <div>
             {{ Form::open(["route" => "crabo.email"]) }}
                 <div class="mb-3">
+                    {{ Form::label('vehicle_id', 'Jármú', ["class" => "form-label"]) }}
+                    {{ Form::select('vehicle_id', $vehicles, 1, ["class" => "form-select"]) }}
+                </div>
+                <div class="mb-3">
                     {{ Form::label('name', 'Név', ["class" => "form-label"]) }}
                     {{ Form::text('name', '', ["class" => "form-control"]) }}
                 </div>
@@ -37,6 +41,17 @@
                     {{ Form::label('tax', 'Adóazonosító jel', ["class" => "form-label"]) }}
                     {{ Form::text('tax', '', ["class" => "form-control"]) }}
                 </div>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="mb-3">
+                        <label for="start">Bérlés kezdete</label>
+                        <input id="start" name="start" class="form-control" type="date" style="width: 200px; margin-right: 3rem"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="start">Bérlés vége</label>
+                        <input id="end" name="end" class="form-control" type="date" style="width: 200px; margin-right: 3rem"/>
+                    </div>
+                </div>
+
                 <div class="mb-3">
                     {{ Form::label('content', 'Tartalom', ["class" => "form-label"]) }}
                     {{ Form::textarea('content', '', ["class" => "form-control"]) }}
